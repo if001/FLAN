@@ -14,10 +14,9 @@ import sys
 from pathlib import Path
 # wd = Path(__file__).parent.parent.resolve()
 wd = Path(__file__).parent.parent.parent.resolve()
-print(str(wd))
 sys.path.append(str(wd))
 
-import flan.v2.mixtures
+# import flan.v2.mixtures
 
 
 ##############################################################
