@@ -17,7 +17,7 @@
 from flan.v2 import constants
 from flan.v2 import constants_t0
 from flan.v2 import mixtures_utils
-from flan.v2 import tasks  # pylint: disable=unused-import
+# from flan.v2 import tasks  # pylint: disable=unused-import
 
 import seqio
 
