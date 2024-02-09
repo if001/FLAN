@@ -10,8 +10,11 @@ import pandas as pd
 import seqio
 import tensorflow as tf
 
-import sys, os
-sys.path.append(os.pardir)
+import sys
+from pathlib import Path
+wd = Path(__file__).parent.parent.resolve()
+sys.path.append(str(wd))
+
 import flan.v2.mixtures
 
 
