@@ -43,30 +43,39 @@ seqio.MixtureRegistry.add(
         ('niv2_fsopt', 1),    # mixing weight = 50%
     ])
 
-seqio.MixtureRegistry.add(
-    'flan2021_submix',
-    tasks=[
-        ('flan_zsopt', 1),      # mixing weight = 25%
-        ('flan_fsopt', 1),      # mixing weight = 25%
-        ('flan_zsnoopt', 1),    # mixing weight = 25%
-        ('flan_fsnoopt', 1),    # mixing weight = 25%
-    ])
+# seqio.MixtureRegistry.add(
+#     'flan2021_submix',
+#     tasks=[
+#         ('flan_zsopt', 1),      # mixing weight = 25%
+#         ('flan_fsopt', 1),      # mixing weight = 25%
+#         ('flan_zsnoopt', 1),    # mixing weight = 25%
+#         ('flan_fsnoopt', 1),    # mixing weight = 25%
+#     ])
 
-seqio.MixtureRegistry.add(
-    't0_submix',
-    tasks=[
-        ('t0_zsopt', 1),      # mixing weight = 25%
-        ('t0_fsopt', 1),      # mixing weight = 25%
-        ('t0_zsnoopt', 1),    # mixing weight = 25%
-        ('t0_fsnoopt', 1),    # mixing weight = 25%
-    ])
+# seqio.MixtureRegistry.add(
+#     't0_submix',
+#     tasks=[
+#         ('t0_zsopt', 1),      # mixing weight = 25%
+#         ('t0_fsopt', 1),      # mixing weight = 25%
+#         ('t0_zsnoopt', 1),    # mixing weight = 25%
+#         ('t0_fsnoopt', 1),    # mixing weight = 25%
+#     ])
+
+# # Define the Final Flan Collection Mixture
+# seqio.MixtureRegistry.add(
+#     'flan2022_submix',
+#     tasks=[
+#         ('flan2021_submix', 0.4),  # mixing weight = 40%
+#         ('t0_submix', 0.32),       # mixing weight = 32%
+#         ('niv2_submix', 0.2),      # mixing weight = 20%
+#         ('cot_submix', 0.05),      # mixing weight = 5%
+#         ('dialog_submix', 0.03),   # mixing weight = 3%
+#     ])
 
 # Define the Final Flan Collection Mixture
 seqio.MixtureRegistry.add(
     'flan2022_submix',
     tasks=[
-        ('flan2021_submix', 0.4),  # mixing weight = 40%
-        ('t0_submix', 0.32),       # mixing weight = 32%
         ('niv2_submix', 0.2),      # mixing weight = 20%
         ('cot_submix', 0.05),      # mixing weight = 5%
         ('dialog_submix', 0.03),   # mixing weight = 3%
