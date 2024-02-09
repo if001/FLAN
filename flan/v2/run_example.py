@@ -1,9 +1,13 @@
+
+
 import copy
 import functools
 import json
 import os
 import random
 from collections import defaultdict
+
+
 
 import numpy as np
 import pandas as pd
@@ -42,12 +46,12 @@ seqio.MixtureRegistry.add(
         ('dialog_fsopt', 1),    # mixing weight = 50%
     ])
 
-seqio.MixtureRegistry.add(
-    'niv2_submix',
-    tasks=[
-        ('niv2_zsopt', 1),    # mixing weight = 50%
-        ('niv2_fsopt', 1),    # mixing weight = 50%
-    ])
+# seqio.MixtureRegistry.add(
+#     'niv2_submix',
+#     tasks=[
+#         ('niv2_zsopt', 1),    # mixing weight = 50%
+#         ('niv2_fsopt', 1),    # mixing weight = 50%
+#     ])
 
 # seqio.MixtureRegistry.add(
 #     'flan2021_submix',
@@ -82,7 +86,7 @@ seqio.MixtureRegistry.add(
 seqio.MixtureRegistry.add(
     'flan2022_submix',
     tasks=[
-        ('niv2_submix', 0.2),      # mixing weight = 20%
+        # ('niv2_submix', 0.2),      # mixing weight = 20%
         ('cot_submix', 0.05),      # mixing weight = 5%
         ('dialog_submix', 0.03),   # mixing weight = 3%
     ])
