@@ -20,7 +20,7 @@ from pathlib import Path
 wd = Path(__file__).parent.parent.parent.resolve()
 sys.path.append(str(wd))
 
-import flan.v2.mixtures
+# import flan.v2.mixtures
 
 
 ##############################################################
